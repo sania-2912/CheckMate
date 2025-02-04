@@ -1,0 +1,152 @@
+*{
+  color: black;
+  justify-content: center;
+}
+.line-through {
+  text-decoration: line-through;
+  color: #0c0c0c;
+  font-style: italic;
+}
+.l{
+  padding: 2px;
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+}
+.container{
+  background-color: rgb(223, 183, 9);
+  justify-content: center;
+  padding: 16px;
+  height: 75vh; 
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 140vh; 
+  border-radius: 15px;
+  margin: 0;
+}
+.no{
+  color: black;
+  padding: 100px;
+}
+.addTodo{
+  background-color: rgb(244, 216, 90);
+  color: black;
+  padding: 10px;
+  margin: 0;
+  border-radius: 10px;
+}
+.todo{
+  margin: 7px auto;
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: rgb(244, 216, 90);
+  width: 90%;
+}
+.t{
+  height: 30px;
+  border-radius: 10px;
+  background-color: white;
+  width: 55vw;
+  color: black;
+}
+.check {
+  margin-right: 20px;
+  width: 18px;
+  height: 18px;
+}
+input[type="checkbox"].ch {
+  transform: scale(1.5);
+  margin: 5px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+}
+h1,h2{
+  color: black;
+  font-size: 15px;
+}
+h2{
+  margin-left: 8px;
+}
+.buttons{
+  display: flex;
+  height: 100%;
+}
+.b{
+  color: white;
+  background-color:rgb(66, 16, 113);
+  margin: 10px;
+  width: 65px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.b svg{
+  fill: white;
+  font-size: 17px;
+}
+.container::-webkit-scrollbar {
+  width: 11px; 
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: rgb(244, 216, 90); 
+  border-radius: 8px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: rgb(223, 183, 9)1;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 95vw; 
+    height: auto; 
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+  }
+
+  .todo {
+    flex-direction: column; 
+    padding: 10px;
+    width: 100%; 
+  }
+
+  .addTodo {
+    padding: 10px;
+    width: 100%; 
+    margin: 10px auto;
+  }
+
+  .t {
+    width: 95%; 
+    height: 40px; 
+  }
+
+  .b {
+    width: 95%; 
+    margin: 5px 0;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 5px;
+  }
+
+  h1, h2 {
+    font-size: 18px; 
+    text-align: center;
+  }
+
+  .check {
+    width: 25px; 
+    height: 25px;
+  }
+
+  input[type="checkbox"].ch {
+    transform: scale(1.8);
+  }
+}
